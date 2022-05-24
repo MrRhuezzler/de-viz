@@ -1,0 +1,28 @@
+{
+  "name": "de-viz",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "git@github.com:MrRhuezzler/de-viz.git",
+  "author": "MrRhuezzler <anonymouspyro369@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "ts-node-dev index.ts",
+    "start:prod": "yarn build && node ./dist/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.35",
+    "@types/pg": "^8.6.5",
+    "ts-node-dev": "^1.1.8"
+  }
+}
