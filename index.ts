@@ -1,10 +1,13 @@
 import { App } from "./src/app";
-import 'dotenv/config';
+import "dotenv/config";
 
-const PORT = parseInt(process.env.PORT || '3000');
+const PORT = parseInt(process.env.PORT || "3000");
 
-new App().start(PORT).then((port) => {
+new App()
+  .start(PORT)
+  .then((port) => {
     console.log(`Server started on port ${port}`);
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log(err);
-});
+  });
